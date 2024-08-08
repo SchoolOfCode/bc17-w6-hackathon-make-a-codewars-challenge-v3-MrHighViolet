@@ -1,16 +1,22 @@
 import { test, expect } from "vitest";
-import {combat} from "./main.js";
+import { combat } from "./main.js";
 
 test("armour", () => {
-    const expected = 16;
+    const expected = 20.5;
     const actual = combat(40, 30, 70);
     expect(actual).toBe(expected);
 });
 
 test("no armour", () => {
-    const expected = 10;
-    const actual = combat(40, 30, 50);
+    const expected = 17.5;
+    const actual = combat(40, 30, 55);
     expect(actual).toBe(expected);
+});
+
+test("below 0", () => {
+  const expected = 0;
+  const actual = combat(35, 50, 59);
+  expect(actual).toBe(expected);
 });
 
 /*
