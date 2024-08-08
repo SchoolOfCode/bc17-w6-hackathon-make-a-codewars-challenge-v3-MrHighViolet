@@ -1,23 +1,51 @@
 import { test, expect } from "vitest";
 import { combat } from "./main.js";
 
-test("armour", () => {
-    const expected = 20.5;
-    const actual = combat(40, 30, 70);
+test("armour+", () => {
+    const expected = 33;
+    const actual = combat({
+      health: 40,
+      armour: true,
+      training: 13}, 30);
     expect(actual).toBe(expected);
 });
 
+test("armour", () => {
+  const expected = 25;
+  const actual = combat({
+    health: 40,
+    armour: true,
+    training: 11}, 30);
+  expect(actual).toBe(expected);
+});
+
 test("no armour", () => {
-    const expected = 17.5;
-    const actual = combat(40, 30, 55);
+    const expected = 20;
+    const actual = combat({
+      health: 40,
+      armour: false,
+      training: 46}, 20);
     expect(actual).toBe(expected);
+});
+
+test("below 0 cockroach", () => {
+  const expected = 5;
+  const actual = combat({
+    health: 40,
+    armour: false,
+    training: 25}, 59);
+  expect(actual).toBe(expected);
 });
 
 test("below 0", () => {
   const expected = 0;
-  const actual = combat(35, 50, 59);
+  const actual = combat({
+    health: 40,
+    armour: false,
+    training: 21}, 59);
   expect(actual).toBe(expected);
 });
+
 
 /*
 
