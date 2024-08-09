@@ -14,4 +14,5 @@ After you've completed the function, test it by running 'npm install' and then '
 
 export function combat(carl, damage) {
     // Write your code here
+
 };

@@ -1,5 +1,16 @@
 # Dungeon Crawler Carl Kata 
 ## By Jonathan Hill (MrHighViolet)
+             ,      ,
+            /(.-""-.)\
+        |\  \/      \/  /|
+        | \ / =.  .= \ / |
+        \( \   o\/o   / )/
+         \_, '-/  \-' ,_/
+           /   \__/   \
+           \ \__/\__/ /
+         ___\ \|--|/ /___
+       /`    \      /    `\
+      /       '----'       \
 
 Here is a Kata based on the popular Dungeon Crawler Carl series of LitRPG books by Matt Dinniman.
 
