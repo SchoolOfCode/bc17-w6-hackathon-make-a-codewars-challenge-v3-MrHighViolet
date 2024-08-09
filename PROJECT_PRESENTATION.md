@@ -10,7 +10,7 @@ I am always impressed by how games/authors work out how much damage is taken by 
 ## Description
 
 Carl, along with his cat, Princess Donut, is an ordinary guy who suddenly finds himself thrust into a deadly, game-like dungeon after Earth is destroyed by aliens. He is surrounded by ogres, goblins and even occasionally level bosses. He needs your help in keeping track of his health after each round of combat.
-Create a combat function that takes the object(carl) and the amount of damage received, and returns the player's new health(rounded to the nearest integer). Health can't be less than 0.
+Create a combat function that takes the object(carl) and the amount of damage received, and returns the player's new health (rounded to the nearest integer). Health can't be less than 0.
 
 The carl object includes the following keys: health(int), armour(boolean), training(int representing hours spent training)
 
@@ -24,7 +24,11 @@ Rules of the dungeon:
 
 I would like to expand this idea so that multiple rounds of combat are required. This would need a combat counter and for carl.health to be updated after each round.
 
+## Tests
+Your goal is to pass 5 tests. They check each rule has been accounted for.
+
 ## Solution
+I believe you can complete this kata. If you want to compare with my solution ...
 
 <details>
     <summary>Click for a solution</summary>

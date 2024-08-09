@@ -1,7 +1,7 @@
 import { test, expect } from "vitest";
 import { combat } from "./main.js";
 
-test("armour+", () => {
+test("Armour with training", () => {
     const expected = 33;
     const actual = combat({
       health: 40,
@@ -10,7 +10,7 @@ test("armour+", () => {
     expect(actual).toBe(expected);
 });
 
-test("armour", () => {
+test("Armour without training", () => {
   const expected = 25;
   const actual = combat({
     health: 40,
@@ -19,7 +19,7 @@ test("armour", () => {
   expect(actual).toBe(expected);
 });
 
-test("no armour", () => {
+test("No armour", () => {
     const expected = 20;
     const actual = combat({
       health: 40,
@@ -28,7 +28,7 @@ test("no armour", () => {
     expect(actual).toBe(expected);
 });
 
-test("below 0 cockroach", () => {
+test("No armour, fatal blow & cockroach", () => {
   const expected = 5;
   const actual = combat({
     health: 40,
@@ -37,7 +37,7 @@ test("below 0 cockroach", () => {
   expect(actual).toBe(expected);
 });
 
-test("below 0", () => {
+test("No armour, fatal blow", () => {
   const expected = 0;
   const actual = combat({
     health: 40,
