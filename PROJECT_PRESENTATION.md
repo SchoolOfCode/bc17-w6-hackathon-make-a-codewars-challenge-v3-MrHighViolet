@@ -37,32 +37,3 @@ I would like to expand this idea so that multiple rounds of combat are required.
 
 ## Tests
 Your goal is to pass 5 tests. They check each rule has been accounted for.
-
-## Solution
-I believe you can complete this kata. If you want to compare with my solution ...
-
-<details>
-    <summary>Click for a solution</summary>
-
-```js
-export function combat(carl, damage) {
-    if (carl.armour === true) { 
-        if (carl.training > 12) {
-            damage *= 0.25; // Reduced by 75%
-        } else {
-        damage *= 0.5; // Reduced by 50%
-        };
-    };
-    
-    const newHealth = carl.health - damage;
-    
-    if (newHealth < 0) { // Fatal hit
-        if (carl.training > 24) { // Cockroach skill
-            return 5;
-        }
-        return 0;
-    }
-    return Math.round(newHealth); 
-};
-```
-</details>
